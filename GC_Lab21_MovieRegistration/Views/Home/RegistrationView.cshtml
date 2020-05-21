@@ -1,0 +1,58 @@
+﻿<!--HTML FORM SYNTAX:-->
+<!--https://docs.microsoft.com/en-us/aspnet/web-pages/overview/ui-layouts-and-themes/4-working-with-forms-->
+<!--HTML <fieldset> TAG:-->
+<!--https://www.w3schools.com/tags/tag_fieldset.asp-->
+<!--FORM METHOD = "GET" vs FORM METHOD = "POST":-->
+<!--https://html.com/attributes/form-method/-->
+<!--ALIGN FORM FIELDS:-->
+<!--https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html-->
+@model MovieModel
+<div asp-validation-summary="All" class="text-danger"></div>
+@Html.Editor("Id")<br />
+@Html.ValidationMessage("Id", "Id error.", new { @class = "text-danger" })
+<div class="registration">
+    <form action="ResultView" , method="post">
+        <fieldset>
+            <legend>Register a Movie:</legend>
+            <div>
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id" value="" /><br /><br />
+            </div>
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" value="" /><br /><br />
+            </div>
+            <div>
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="Horror">Horror</option>
+                    <option value="Action">Action</option>
+                    <option value="Western">Western</option>
+                    <option value="Gangster">Gangster</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Noir">Noir</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Musical">Musical</option>
+                    <option value="ScienceFiction">ScienceFiction</option>
+                    <option value="Thriller">Triller</option>
+                </select><br /><br />
+            </div>
+            <div>
+                <label for="year">Release Year:</label>
+                <input type="number" id="year" name="year" value="" /><br /><br />
+            </div>
+            <div>
+                <label for="cast">Cast:</label>
+                <input type="text" id="cast" name="cast" value="" /><br /><br />
+            </div>
+            <div>
+                <label for="director">Director:</label>
+                <input type="text" id="director" name="director" value="" /><br /><br />
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="submit" value="Register Movie" />
+            </div>
+        </fieldset>
+    </form>
+</div>
