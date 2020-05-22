@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
-using System.Web.Mvc;
 
 namespace GC_Lab21_MovieRegistration.Models
 {
@@ -11,7 +9,7 @@ namespace GC_Lab21_MovieRegistration.Models
 
     public enum Genre { Horror, Action, Western, Gangster, Romance, Noir, Comedy, Musical, ScienceFiction, Thriller}
 
-    public class MovieModel
+    public class Movie
     {
         [Key]
         [Required(ErrorMessage="Please enter a movie ID number.")]
@@ -21,21 +19,29 @@ namespace GC_Lab21_MovieRegistration.Models
         public string Title { get; set; }
         public Genre Genre { get; set; }
         [Required(ErrorMessage="Please enter a release date.")]
-        [Range(1850, 2020, ErrorMessage = "Year must be between 1850 and 2020.")]
+        [Range(1888, 2020, ErrorMessage = "Year must be between 1888 and 2020.")]
         public int Year { get; set; }
-        public List<string> Cast { get; set; }
+        public string Cast { get; set; }
         public string Director { get; set; }
-        public MovieModel(int id, string title, Genre genre, DateTime year, List<string> cast, string director)
+        public double RentalCost { get; set; }
+        public int Runtime { get; set; }
+
+        public Movie()
+        {
+
+        }
+
+        public Movie(int id, string title, Genre genre, int year, string cast, string director, double rentalCost, int runtime)
         {
             Id = id;
             Title = title;
             Genre = genre;
-            Year = year.Year;
+            Year = year;
             Cast = cast;
             Director = director;
+            RentalCost = rentalCost;
+            Runtime = runtime;
         }
-        public MovieModel()
-        {
-        }
+
     }
 }

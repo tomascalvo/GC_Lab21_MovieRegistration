@@ -23,6 +23,14 @@ namespace GC_Lab21_MovieRegistration
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            }
+            );
             services.AddControllersWithViews();
         }
 
@@ -41,7 +49,7 @@ namespace GC_Lab21_MovieRegistration
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();
@@ -50,7 +58,7 @@ namespace GC_Lab21_MovieRegistration
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Movie}/{action=Index}/{id?}");
             });
         }
     }

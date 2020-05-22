@@ -36,3 +36,4 @@
 /Users/tomasroderickcalvo/Projects/GC_Lab21_MovieRegistration/GC_Lab21_MovieRegistration/obj/Debug/netcoreapp3.1/GC_Lab21_MovieRegistration.csproj.CopyComplete
 /Users/tomasroderickcalvo/Projects/GC_Lab21_MovieRegistration/GC_Lab21_MovieRegistration/obj/Debug/netcoreapp3.1/Razor/Views/Home/RegistrationView.cshtml.g.cs
 /Users/tomasroderickcalvo/Projects/GC_Lab21_MovieRegistration/GC_Lab21_MovieRegistration/obj/Debug/netcoreapp3.1/Razor/Views/Home/ResultView.cshtml.g.cs
+/Users/tomasroderickcalvo/Projects/GC_Lab21_MovieRegistration/GC_Lab21_MovieRegistration/obj/Debug/netcoreapp3.1/Razor/Views/Movie/Index.cshtml.g.cs

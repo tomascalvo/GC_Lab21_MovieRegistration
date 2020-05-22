@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{C7D0DCE5-BF5B-498A-AC1C-8C14609118D5}|Default">
   <MonoDevelop.Ide.ItemProperties.GC__Lab21__MovieRegistration PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="GC_Lab21_MovieRegistration/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GC_Lab21_MovieRegistration/Controllers/MovieController.cs">
     <Files>
-      <File FileName="GC_Lab21_MovieRegistration/Models/MovieModel.cs" Line="26" Column="21" />
-      <File FileName="GC_Lab21_MovieRegistration/Views/Home/RegistrationView.cshtml" Line="18" Column="19" />
-      <File FileName="GC_Lab21_MovieRegistration/Views/Home/ResultView.cshtml" Line="3" Column="61" />
-      <File FileName="GC_Lab21_MovieRegistration/Controllers/HomeController.cs" Line="38" Column="10" />
+      <File FileName="GC_Lab21_MovieRegistration/Controllers/MovieController.cs" Line="34" Column="16" />
+      <File FileName="GC_Lab21_MovieRegistration/Views/Movie/IndexI.cshtml" Line="31" Column="69" />
+      <File FileName="GC_Lab21_MovieRegistration/Startup.cs" Line="53" Column="48" />
+      <File FileName="GC_Lab21_MovieRegistration/Controllers/HomeController.cs" Line="37" Column="46" />
+      <File FileName="GC_Lab21_MovieRegistration/Views/Home/ResultView.cshtml" Line="5" Column="32" />
+      <File FileName="GC_Lab21_MovieRegistration/Models/MovieModel.cs" Line="39" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,12 +16,13 @@
             <Node name="GC_Lab21_MovieRegistration" expanded="True">
               <Node name="Dependencies" expanded="True" />
               <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
+                <Node name="MovieController.cs" selected="True" />
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
+                <Node name="Movie" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">

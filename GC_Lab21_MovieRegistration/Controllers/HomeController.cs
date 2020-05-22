@@ -30,11 +30,11 @@ namespace GC_Lab21_MovieRegistration.Controllers
 
         public IActionResult RegistrationView()
         {
-            MovieModel newMovie = new MovieModel();
+            Movie newMovie = new Movie();
             return View(newMovie);
         }
 
-        public IActionResult ResultView(MovieModel m)
+        public IActionResult ResultView(Movie m)
         {
             return View(m);
         }

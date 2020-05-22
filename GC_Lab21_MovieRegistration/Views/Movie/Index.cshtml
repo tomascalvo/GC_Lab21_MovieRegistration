@@ -1,0 +1,39 @@
+﻿@model List<Movie>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Why not <a href="Home/RegistrationView">register a movie in the database</a>?</p>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <td>Id</td>
+        <td>Title</td>
+        <td>Genre</td>
+        <td>Year</td>
+        <td>Cast</td>
+        <td>Director</td>
+        <td>RentalCost</td>
+        <td>Runtime</td>
+    </tr>
+
+    @foreach (Movie movie in Model)
+    {
+        <tr>
+            <td>@movie.Id</td>
+            <td>@movie.Title</td>
+            <td>@movie.Genre</td>
+            <td>@movie.Year</td>
+            <td>@movie.Cast</td>
+            <td>@movie.Director</td>
+            <td>@movie.RentalCost</td>
+            <td>@movie.Runtime</td>
+            <td>
+                <a class="btn btn-success" href="../Movie/AddToCartid=movie.Id&title=@movie.Title&genre=@movie.Genre&year=@movie.Year&cast=@movie.Cast&director=@movie.Director&rentalCost=@movie.RentalCost&runtime=@movie.Runtime)">
+                    Rent
+                </a>
+            </td>
+        </tr>
+    };
+
+</table>

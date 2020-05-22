@@ -6,10 +6,7 @@
 <!--https://html.com/attributes/form-method/-->
 <!--ALIGN FORM FIELDS:-->
 <!--https://stackoverflow.com/questions/4309950/how-to-align-input-forms-in-html-->
-@model MovieModel
-<div asp-validation-summary="All" class="text-danger"></div>
-@Html.Editor("Id")<br />
-@Html.ValidationMessage("Id", "Id error.", new { @class = "text-danger" })
+
 <div class="registration">
     <form action="ResultView" , method="post">
         <fieldset>
