@@ -2,12 +2,11 @@
   <MonoDevelop.Ide.ItemProperties.GC__Lab21__MovieRegistration PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="GC_Lab21_MovieRegistration/Controllers/MovieController.cs">
     <Files>
-      <File FileName="GC_Lab21_MovieRegistration/Controllers/MovieController.cs" Line="34" Column="16" />
-      <File FileName="GC_Lab21_MovieRegistration/Views/Movie/IndexI.cshtml" Line="31" Column="69" />
-      <File FileName="GC_Lab21_MovieRegistration/Startup.cs" Line="53" Column="48" />
-      <File FileName="GC_Lab21_MovieRegistration/Controllers/HomeController.cs" Line="37" Column="46" />
+      <File FileName="GC_Lab21_MovieRegistration/Startup.cs" Line="26" Column="50" />
+      <File FileName="GC_Lab21_MovieRegistration/Controllers/MovieController.cs" Line="31" Column="1" />
+      <File FileName="GC_Lab21_MovieRegistration/Views/Movie/IndexI.cshtml" Line="37" Column="7" />
       <File FileName="GC_Lab21_MovieRegistration/Views/Home/ResultView.cshtml" Line="5" Column="32" />
-      <File FileName="GC_Lab21_MovieRegistration/Models/MovieModel.cs" Line="39" Column="24" />
+      <File FileName="GC_Lab21_MovieRegistration/Models/MovieModel.cs" Line="24" Column="41" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

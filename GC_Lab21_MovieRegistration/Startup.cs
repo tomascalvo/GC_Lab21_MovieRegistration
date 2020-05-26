@@ -31,6 +31,7 @@ namespace GC_Lab21_MovieRegistration
                 options.Cookie.IsEssential = true;
             }
             );
+            services.AddMvc();
             services.AddControllersWithViews();
         }
 
@@ -51,9 +52,7 @@ namespace GC_Lab21_MovieRegistration
             app.UseStaticFiles();
             app.UseSession();
             app.UseRouting();
-
-            app.UseAuthorization();
-
+            app.UseAuthorization(); 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
